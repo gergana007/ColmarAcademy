@@ -11,7 +11,7 @@
     <!-- Header and navigation -->
     <header class="flex">
       <div id="site-header">
-        <nav class="flex">
+        <nav class="desktop-menu flex">
           <div class="logo flex">
             <img src="./resources/images/ic-logo.svg" alt="logo">
             <span class="bold allcaps">Colmar</span><span class="transparent allcaps">Academy</span>
@@ -23,10 +23,13 @@
               <li><a href="#">For companies</a></li>
               <li><a href="#">Sign in</a></li>
             </ul>
-            <ul class="mobile-menu">
-              <li><a href="#">Menu</a></li>
-            </ul>
           </div>
+        </nav>
+        <nav class="mobile-menu flex">
+          <a href="#"><img src="./resources/images/ic-logo.svg" alt="logo"></a>
+          <a href="#"><img src="./resources/images/ic-on-campus.svg" alt="logo"></a>
+          <a href="#"><img src="./resources/images/ic-online.svg" alt="logo"></a>
+          <a href="#"><img src="./resources/images/ic-login.svg" alt="logo"></a>
         </nav>
       </div>
     </header>
@@ -44,7 +47,9 @@
 <!-- on-campus -->
     <div class="site-width flex" id="oncampus">
       <div class="featured">
-        <img src="./resources/images/information-main.jpg" alt="student reading">
+        <div class="image">
+          <img src="./resources/images/information-main.jpg" alt="student reading">
+        </div>
         <div class="description flex">
           <h2>It doesn't hurt to keep practicing</h2>
           <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
@@ -53,7 +58,12 @@
       </div>
       <div class="sideitems flex">
         <div class="item flex">
-          <img src="./resources/images/information-orientation.jpg" alt="people walking">
+          <div class="image-item">
+            <div class="image">
+              <img class="desktop-image" src="./resources/images/information-orientation.jpg" alt="people walking">
+              <img class="mobile-image" src="./resources/images/information-orientation-mobile.jpg" alt="people walking">
+            </div>
+          </div>
           <div class="description flex">
             <h4>Orientation date</h4>
             <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
@@ -61,7 +71,12 @@
           </div>
         </div>
         <div class="item flex">
-          <img src="./resources/images/information-campus.jpg" alt="classroom with world map">
+          <div class="image-item">
+            <div class="image">
+              <img class="desktop-image" src="./resources/images/information-campus.jpg" alt="classroom with world map">
+              <img class="mobile-image" src="./resources/images/information-campus-mobile.jpg" alt="classroom with world map">
+            </div>
+          </div>
           <div class="description flex">
             <h4>Our campus</h4>
             <p>Find which campus is close by you</p>
@@ -69,7 +84,12 @@
           </div>
         </div>
         <div class="item flex">
-          <img src="./resources/images/information-guest-lecture.jpg" alt="keynote speaker">
+          <div class="image-item">
+            <div class="image">
+              <img class="desktop-image" src="./resources/images/information-guest-lecture.jpg" alt="keynote speaker">
+              <img class="mobile-image" src="./resources/images/information-guest-lecture-mobile.jpg" alt="keynote speaker">
+            </div>
+          </div>
           <div class="description flex">
             <h4>Our guest lecture</h4>
             <p>Join a keynote with Oliver Sack about music in medical treatment</p>
@@ -132,6 +152,17 @@
           </div>
         </div>
       </div>
+      <div class="learningcourses-mobile">
+        <ul>
+          <li> <a class="learning-button bold" href="#">Software engineering</a> </li>
+          <li> <a class="learning-button bold" href="#">Computer art</a> </li>
+          <li> <a class="learning-button bold" href="#">Design</a> </li>
+          <li> <a class="learning-button bold" href="#">Data</a> </li>
+          <li> <a class="learning-button bold" href="#">Business</a> </li>
+          <li> <a class="learning-button bold" href="#">Marketing</a> </li>
+        </ul>
+
+      </div>
     </div>
 
 
@@ -151,14 +182,18 @@
         </div>
         <div class="sideitems flex">
           <div class="item flex">
-            <img src="./resources/images/thesis-fisma.jpg" alt="phone and papers">
+            <div class="image">
+              <img src="./resources/images/thesis-fisma.jpg" alt="phone and papers">
+            </div>
             <div class="description flex">
               <h4>Fisma: Design and Prototype</h4>
               <p>Designer showcase of new prototype product</p>
             </div>
           </div>
           <div class="item flex">
-            <img src="./resources/images/thesis-now-and-then.jpg" alt="skyline">
+            <div class="image">
+              <img src="./resources/images/thesis-now-and-then.jpg" alt="skyline">
+            </div>
             <div class="description flex">
               <h4>Now and then</h4>
               <p>Research study about New York</p>
