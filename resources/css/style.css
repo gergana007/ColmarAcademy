@@ -1,0 +1,344 @@
+html {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5rem;
+  color: #3d3d3d;
+  background-color: white;
+}
+.site-width {
+  max-width: 1024px;
+  margin: auto;
+  line-height: 1.5rem;
+}
+
+/* common site styles */
+h1, h2, h3, h4 {
+  font-family: "Roboto";
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+h1 {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+h2 {
+  font-size: 1.75rem;
+  line-height: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+h4 {
+  font-size: 1rem;
+  line-height: 1rem;
+  padding-bottom: 0;
+}
+.allcaps {
+  text-transform: uppercase;
+}
+.bold {
+  font-family: "Roboto";
+  font-weight: bold;
+}
+.transparent {
+    color: rgb(61, 61, 61, 0.5);
+}
+
+
+/* Header and navigation */
+header {
+  position: fixed;
+  z-index: 100;
+  background-color: white;
+  width: 100%;
+}
+#site-header {
+  display: block;
+  width: 1024px;
+  margin: auto;
+  border-bottom: 1px solid rgba(141, 177, 179, 0.75);
+}
+nav {
+    align-items: center;
+    justify-content: space-between;
+}
+.flex {
+  display: flex;
+}
+.logo {
+  align-items: center;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+.logo img {
+  margin-left: 1.5rem;
+  margin-right: 0.5rem;
+  height: 3rem;
+}
+.logo span {
+  font-size: 2rem;
+  letter-spacing: 0.25rem;
+  padding: 1rem 0rem;
+}
+.mobile-menu {
+  display: none;
+}
+nav .menu {
+  padding-right: 1.5rem;
+}
+li {
+  display: inline;
+  padding-left: 1rem;
+}
+a {
+  color: #3d3d3d;
+  text-decoration: none;
+}
+
+/* banner image */
+.banner {
+  padding-top: 4rem;
+  position: relative;
+  background-color: #8db1b3;
+  width: 100%;
+}
+.banner img {
+  width: 60%;
+  padding: 2rem 1.5rem;
+  height: 100%;
+}
+.banner h1 {
+  padding-right: 4rem;
+}
+.description {
+  flex-direction: column;
+  justify-content: center;
+}
+.banner .description {
+  width: 40%;
+  padding: 2rem 2rem 2rem 0rem;
+}
+.button {
+  display: inline-block;
+  border-radius: 0.25rem;
+  background-color: #3d3d3d;
+  color: white;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 0.5rem 0;
+  transition: all 0.2s linear 0s;
+}
+.button:hover  {
+  color: #3d3d3d;
+  background-color: #b38f8d;
+  box-shadow: 0 2px 4px rgba(120, 108, 107, .5)
+}
+.button:active {
+  color: white;
+  background-color: #786c6b;
+  box-shadow: 0 2px 4px rgba(120, 108, 107, .5)
+  /*border: 0.25rem solid #b38f8d;*/
+}
+.description a {
+  display: inline;
+  margin-right: 1rem;
+  letter-spacing: 0.1rem;
+  font-size: 1.5rem;
+}
+
+/* on-campus */
+#oncampus {
+  padding: 1rem 0 2rem 0;
+  width: 100%;
+}
+.featured {
+  width: 60%;
+  padding: 0rem 1.5rem;
+}
+.featured img {
+  padding-top: 1rem;
+  width: 100%;
+  height: auto;
+}
+.featured h2 {
+  padding: 2rem 0 1.5rem 0;
+}
+.source {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 0.75rem;
+  padding-top: 2rem;
+}
+.sideitems {
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 40%;
+}
+.item {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.sideitems img {
+  width: 35%;
+  height: auto;
+  padding: 1rem;
+}
+.sideitems .description {
+  width: 65%;
+  padding-right: 1rem;
+}
+.sideitems p {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  padding: 0.5rem 0;
+}
+.sideitems a {
+  font-size: 0.75rem;
+  color: #8db1b3;
+}
+#oncampus .sideitems .item:last-child {
+  background-color: rgba(179, 143, 141, 0.25);
+}
+
+/* start learning */
+#startlearning {
+  background-color: rgba(141, 177, 179, 0.25);
+}
+#startlearning h2 {
+  text-align: center;
+  padding: 2rem;
+}
+.learningcourses {
+  padding: 0 2rem 0rem 4rem;
+  flex-wrap: wrap;
+}
+.learningcourses .item {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 29%;
+  margin: 0 2rem 2rem 0;
+  flex-shrink: 1;
+  background-color: white;
+}
+.learningcourses img {
+  width: 100%;
+  height: auto;
+}
+
+.learningcourses .description {
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+.learningcourses p {
+  padding-bottom: 1.5rem;
+}
+.learningcourses .allcaps {
+  padding: 0.5rem 0;
+}
+
+/* Thesis exhibit */
+#exhibit h2 {
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+#exhibit .featured {
+  margin-bottom: 1.5rem;
+}
+.featured video {
+  padding-top: 1rem;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+#exhibit h3 {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+#exhibit .sideitems .item:first-child {
+  background-color: rgba(179, 143, 141, 0.25);
+}
+
+/* footer */
+#site-footer {
+  border-top: 1px solid rgba(141, 177, 179, 0.75);
+  padding: 1rem 0.5rem 3rem 1.5rem;
+}
+
+/*
+
+@media only screen and (max-width: 1024px) {
+  .banner {
+    padding-top: 0;
+    height: 22rem;
+  }
+  .site-width {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .whitebox {
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+  .whitebox p {
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .banner {
+    background-position: 20%;
+    height: 17rem;
+  }
+  .logo span {
+    display: none;
+  }
+  .menu ul {
+    display: none;
+  }
+  .menu ul.mobile-menu {
+    display: block;
+  }
+  .whitebox {
+    margin: 9rem auto 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+  .whitebox p {
+    font-size: 1rem;
+    padding: 1rem 0;
+  }
+  .service-grid, .information {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 3rem;
+  }
+  .service {
+    height: auto;
+    margin: .77rem;
+    font-size: .77rem;
+  }
+  .info {
+    width: auto;
+  }
+  .info .heading {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+  .info .text {
+    padding: 1rem;
+    font-size: .77rem;
+  }
+  footer .logo {
+    justify-content: center;
+  }
+}
+*/
